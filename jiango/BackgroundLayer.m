@@ -20,15 +20,6 @@
 -(id) init
 {
 	if( (self=[super init]) ) {
-        // Create fuel bar
-        _fuel = [CCProgressTimer progressWithSprite:[CCSprite spriteWithFile:@"white_bar.png"]];
-        _fuel.type = kCCProgressTimerTypeBar;
-        _fuel.midpoint = ccp(0, 0);
-        _fuel.percentage = 100;
-        
-        [self addChild:_fuel z:1000];
-        [_fuel setPosition:ccp(400, 1000)];
-        
         // Create the background CCParallaxNode
         _backgroundNode = [CCParallaxNode node];
         [self addChild:_backgroundNode z:-1];
@@ -124,9 +115,6 @@
             [self.backgroundNode incrementOffset:ccp(0,background.contentSize.height*2) forChild:background];
         }
     }
-    
-    // timer
-    _fuel.percentage -= dt * 10;
 }
 
 @end

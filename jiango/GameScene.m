@@ -16,7 +16,6 @@
 -(id)init {
     self = [super init];
     if (self != nil) {
-        CCLOG(@"game scene init");
         // Background Layer
         BackgroundLayer *backgroundLayer = [BackgroundLayer node];
         [self addChild:backgroundLayer z:0];

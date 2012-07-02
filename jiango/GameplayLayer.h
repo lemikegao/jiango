@@ -18,5 +18,6 @@
 @property (nonatomic, strong) CCSpriteBatchNode *gameplayBatchNode;
 @property (nonatomic, strong) CCLabelTTF *scoreLabel;
 @property int score;
+@property (nonatomic, strong) CCProgressTimer *fundingTimer;
 
 @end

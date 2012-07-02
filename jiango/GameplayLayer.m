@@ -15,6 +15,7 @@
 @synthesize gameplayBatchNode = _gameplayBatchNode;
 @synthesize scoreLabel = _scoreLabel;
 @synthesize score = _score;
+@synthesize fundingTimer = _fundingTimer;
 
 -(id)init {
     self = [super init];
@@ -23,10 +24,19 @@
         
         // adding score
         _score = 0;
-        _scoreLabel = [CCLabelTTF labelWithString:@"Score: 0" fontName:@"Verdana" fontSize:28.0f];
+        _scoreLabel = [CCLabelTTF labelWithString:@"Score: 0" fontName:@"Verdana" fontSize:18.0f];
         _scoreLabel.anchorPoint = ccp(0, 0);
         _scoreLabel.position = ccp(10.0f, screenSize.height - 38.0f);
-        [self addChild:_scoreLabel z:kScoreZValue];
+        [self addChild:_scoreLabel z:kScoreLabelZValue];
+        
+        // add funding bar
+        _fundingTimer = [CCProgressTimer progressWithSprite:[CCSprite spriteWithFile:@"funding-bar-hd.png"]];
+        _fundingTimer.type = kCCProgressTimerTypeBar;
+        _fundingTimer.midpoint = ccp(0, 0);
+        _fundingTimer.percentage = 100;
+        
+        [self addChild:_fundingTimer z:kFundingTimerZValue];
+        [_fundingTimer setPosition:ccp(400, 1000)];
         
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"jiangoAtlas.plist"];
         _gameplayBatchNode = [CCSpriteBatchNode batchNodeWithFile:@"jiangoAtlas.png"];
@@ -54,6 +64,9 @@
     
     self.score += kScoreIncrease;
     [self.scoreLabel setString:[NSString stringWithFormat:@"Score: %i", self.score]];
+    
+    // timer
+    self.fundingTimer.percentage -= deltaTime * 2;
 }
 
 @end

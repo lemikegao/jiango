@@ -23,6 +23,8 @@
 		C42E2747159FC66F007138BF /* rocketship-right-jets2.png in Resources */ = {isa = PBXBuildFile; fileRef = C42E273E159FC66F007138BF /* rocketship-right-jets2.png */; };
 		C42E2748159FC66F007138BF /* rocketship-right.png in Resources */ = {isa = PBXBuildFile; fileRef = C42E273F159FC66F007138BF /* rocketship-right.png */; };
 		C4350D48159FBBFA00EFCE9C /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = C4350D47159FBBFA00EFCE9C /* background.png */; };
+		C450F97315A25AA600AE896C /* funding-bar-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = C450F97215A25AA600AE896C /* funding-bar-hd.png */; };
+		C450F97615A25AAC00AE896C /* pivot-message.png in Resources */ = {isa = PBXBuildFile; fileRef = C450F97515A25AAC00AE896C /* pivot-message.png */; };
 		C47A6068159F815400FE78D9 /* bg_front_spacedust.png in Resources */ = {isa = PBXBuildFile; fileRef = C47A6063159F815400FE78D9 /* bg_front_spacedust.png */; };
 		C47A6069159F815400FE78D9 /* bg_galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = C47A6064159F815400FE78D9 /* bg_galaxy.png */; };
 		C47A606A159F815400FE78D9 /* bg_planetsunrise.png in Resources */ = {isa = PBXBuildFile; fileRef = C47A6065159F815400FE78D9 /* bg_planetsunrise.png */; };
@@ -184,6 +186,8 @@
 		C42E273E159FC66F007138BF /* rocketship-right-jets2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocketship-right-jets2.png"; sourceTree = "<group>"; };
 		C42E273F159FC66F007138BF /* rocketship-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocketship-right.png"; sourceTree = "<group>"; };
 		C4350D47159FBBFA00EFCE9C /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = jiango/background.png; sourceTree = "<group>"; };
+		C450F97215A25AA600AE896C /* funding-bar-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "funding-bar-hd.png"; sourceTree = "<group>"; };
+		C450F97515A25AAC00AE896C /* pivot-message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pivot-message.png"; sourceTree = "<group>"; };
 		C47A6063159F815400FE78D9 /* bg_front_spacedust.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_front_spacedust.png; sourceTree = "<group>"; };
 		C47A6064159F815400FE78D9 /* bg_galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_galaxy.png; sourceTree = "<group>"; };
 		C47A6065159F815400FE78D9 /* bg_planetsunrise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_planetsunrise.png; sourceTree = "<group>"; };
@@ -568,6 +572,8 @@
 				C427ABAC159FCFBB0011893C /* jiangoAtlas.plist */,
 				C427ABAD159FCFBB0011893C /* jiangoAtlas.png */,
 				C4350D47159FBBFA00EFCE9C /* background.png */,
+				C450F97215A25AA600AE896C /* funding-bar-hd.png */,
+				C450F97515A25AAC00AE896C /* pivot-message.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -1131,6 +1137,8 @@
 				C427ABAE159FCFBB0011893C /* jiangoAtlas.plist in Resources */,
 				C427ABAF159FCFBB0011893C /* jiangoAtlas.png in Resources */,
 				C427ABB3159FD4B10011893C /* Rocketship.plist in Resources */,
+				C450F97315A25AA600AE896C /* funding-bar-hd.png in Resources */,
+				C450F97615A25AAC00AE896C /* pivot-message.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

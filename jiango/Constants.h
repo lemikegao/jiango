@@ -10,10 +10,11 @@
 #define jiango_Constants_h
 
 #define kRocketshipSpriteZValue 100
-#define kScoreZValue 1000
-#define kFuelZValue 1000
+#define kScoreLabelZValue 1000
+#define kFundingTimerZValue 1000
 #define kRocketshipSpriteTagValue 0
+#define kPivotSpriteZValue 10000
 
-#define kScoreIncrease 113
+#define kScoreIncrease 13
 
 #endif
