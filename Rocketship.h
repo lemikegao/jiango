@@ -14,5 +14,7 @@
 
 @property (nonatomic, strong) CCSpriteFrame *idleFrame;
 @property (nonatomic, strong) CCAnimation *movingStraightAnim;
+@property (nonatomic, strong) CCAnimation *rotatingLeftAndMovingStraightAnim;
+@property (nonatomic, strong) CCAnimation *rotatingRightAndMovingStraightAnim;
 
 @end

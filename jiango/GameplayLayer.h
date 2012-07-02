@@ -16,5 +16,7 @@
 
 @property (nonatomic, strong) Rocketship *rocketship;
 @property (nonatomic, strong) CCSpriteBatchNode *gameplayBatchNode;
+@property (nonatomic, strong) CCLabelTTF *scoreLabel;
+@property int score;
 
 @end

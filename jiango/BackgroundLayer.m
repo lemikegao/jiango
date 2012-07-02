@@ -61,21 +61,54 @@
 #pragma mark - iCade
 
 -(void)buttonDown:(iCadeState)button {
+    CharacterStates delegateState = [self.controlsDelegate getDelegateState];
     if (button == iCadeButtonA) {
-//        [self.controlsDelegate changeRocketshipMovement:kRotateLeft];
-        [self.controlsDelegate changeState:kStateRotatingLeft];
+        if (delegateState == kStateMovingStraight) {
+            [self.controlsDelegate changeState:kStateRotatingLeftAndMovingStraight];
+        } else {
+            [self.controlsDelegate changeState:kStateRotatingLeft];
+        }
     } else if (button == iCadeButtonC) {
-//        [self.controlsDelegate changeRocketshipMovement:kRotateRight];
-        [self.controlsDelegate changeState:kStateRotatingRight];
+        if (delegateState == kStateMovingStraight) {
+            [self.controlsDelegate changeState:kStateRotatingRightAndMovingStraight];
+        } else {
+            [self.controlsDelegate changeState:kStateRotatingRight];
+        }
     } else if (button == iCadeButtonE) {
-//        [self.controlsDelegate changeRocketshipMovement:kMoveStraight];
-        [self.controlsDelegate changeState:kStateMovingStraight];
+        if (delegateState == kStateRotatingLeft) {
+            [self.controlsDelegate changeState:kStateRotatingLeftAndMovingStraight];
+        } else if (delegateState == kStateRotatingRight) {
+            [self.controlsDelegate changeState:kStateRotatingRightAndMovingStraight];
+        } else {
+            [self.controlsDelegate changeState:kStateMovingStraight];
+        }
     }
 }
 
 -(void)buttonUp:(iCadeState)button {
-//    [self.controlsDelegate changeRocketshipMovement:kMovementNone];
-    [self.controlsDelegate changeState:kStateIdle];
+    CharacterStates delegateState = [self.controlsDelegate getDelegateState];
+    
+    if (button == iCadeButtonA) {
+        if (delegateState == kStateRotatingLeftAndMovingStraight) {
+            [self.controlsDelegate changeState:kStateMovingStraight];
+        } else {
+            [self.controlsDelegate changeState:kStateIdle];
+        }
+    } else if (button == iCadeButtonC) {
+        if (delegateState == kStateRotatingRightAndMovingStraight) {
+            [self.controlsDelegate changeState:kStateMovingStraight];
+        } else {
+            [self.controlsDelegate changeState:kStateIdle];
+        }
+    } else if (button == iCadeButtonE) {
+        if (delegateState == kStateRotatingLeftAndMovingStraight) {
+            [self.controlsDelegate changeState:kStateRotatingLeft];
+        } else if (delegateState == kStateRotatingRightAndMovingStraight) {
+            [self.controlsDelegate changeState:kStateRotatingRight];
+        } else {
+            [self.controlsDelegate changeState:kStateIdle];
+        }
+    }
 }
 
 #pragma mark -

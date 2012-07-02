@@ -11,5 +11,23 @@
 		<key>filenamePrefix</key>
 		<string>rocketship_</string>
 	</dict>
+	<key>rotatingLeftAndMovingStraightAnim</key>
+	<dict>
+		<key>animationFrames</key>
+		<string>5,6</string>
+		<key>delay</key>
+		<real>0.3</real>
+		<key>filenamePrefix</key>
+		<string>rocketship_</string>
+	</dict>
+	<key>rotatingRightAndMovingStraightAnim</key>
+	<dict>
+		<key>animationFrames</key>
+		<string>8,9</string>
+		<key>delay</key>
+		<real>0.3</real>
+		<key>filenamePrefix</key>
+		<string>rocketship_</string>
+	</dict>
 </dict>
 </plist>

@@ -13,11 +13,20 @@
 
 @synthesize rocketship = _rocketship;
 @synthesize gameplayBatchNode = _gameplayBatchNode;
+@synthesize scoreLabel = _scoreLabel;
+@synthesize score = _score;
 
 -(id)init {
     self = [super init];
     if (self != nil) {
         CGSize screenSize = [CCDirector sharedDirector].winSize;
+        
+        // adding score
+        _score = 0;
+        _scoreLabel = [CCLabelTTF labelWithString:@"Score: 0" fontName:@"Verdana" fontSize:28.0f];
+        _scoreLabel.anchorPoint = ccp(0, 0);
+        _scoreLabel.position = ccp(10.0f, screenSize.height - 38.0f);
+        [self addChild:_scoreLabel z:kScoreZValue];
         
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"jiangoAtlas.plist"];
         _gameplayBatchNode = [CCSpriteBatchNode batchNodeWithFile:@"jiangoAtlas.png"];
@@ -42,6 +51,9 @@
     for (GameCharacter *tempChar in listOfGameObjects) {
         [tempChar updateStateWithDeltaTime:deltaTime andListOfGameObjects:listOfGameObjects];
     }
+    
+    self.score += kScoreIncrease;
+    [self.scoreLabel setString:[NSString stringWithFormat:@"Score: %i", self.score]];
 }
 
 @end

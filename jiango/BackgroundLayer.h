@@ -13,8 +13,8 @@
 
 @protocol ControlsDelegate
 
-//-(void)changeRocketshipMovement:(RocketshipMovement)movement;
 -(void)changeState:(CharacterStates)newState;
+-(CharacterStates)getDelegateState;
 
 @end
 
