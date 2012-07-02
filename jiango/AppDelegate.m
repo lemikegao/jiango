@@ -9,7 +9,7 @@
 #import "cocos2d.h"
 
 #import "AppDelegate.h"
-#import "HelloWorldLayer.h"
+#import "BackgroundLayer.h"
 #import "GameScene.h"
 
 @implementation AppController

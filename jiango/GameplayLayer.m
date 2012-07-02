@@ -11,51 +11,37 @@
 
 @implementation GameplayLayer
 
+@synthesize rocketship = _rocketship;
+@synthesize gameplayBatchNode = _gameplayBatchNode;
+
 -(id)init {
     self = [super init];
     if (self != nil) {
-        andyDirection = kDirectionNone;
-        CGSize screenSize = [CCDirector sharedDirector].winSize;  // 1
-        // enable touches
-//        self.isTouchEnabled = YES;                                // 2
-        andySprite = [CCSprite spriteWithFile:@"andy horse zoom.jpg"]; // 3
+        CGSize screenSize = [CCDirector sharedDirector].winSize;
         
-        [andySprite setPosition:
-         CGPointMake(screenSize.width/2,
-                     screenSize.height/2)];                // 4
-        [self addChild:andySprite];                             // 5
+        [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"jiangoAtlas.plist"];
+        _gameplayBatchNode = [CCSpriteBatchNode batchNodeWithFile:@"jiangoAtlas.png"];
+        [self addChild:_gameplayBatchNode z:0];
+        
+        _rocketship = [[Rocketship alloc] initWithSpriteFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"rocketship_1.png"]];
+        [_rocketship setPosition:ccp(screenSize.width/2, screenSize.height/2)];
+        
+        [_gameplayBatchNode addChild:_rocketship z:kRocketshipSpriteZValue tag:kRocketshipSpriteTagValue];
+        
+        [self scheduleUpdate];
     }
-    
-    [self scheduleUpdate];
     
     return self; 
-}
-
--(void)changeAndyDirection:(ControlDirection)direction {
-    andyDirection = direction;
-}
-
--(void)andyMove {
-    if (andyDirection == kDirectionLeft) {
-        CGPoint newPosition = ccp(andySprite.position.x-5, andySprite.position.y);
-        [andySprite setPosition:newPosition];
-    } else if (andyDirection == kDirectionUp) {
-        CGPoint newPosition = ccp(andySprite.position.x, andySprite.position.y+5);
-        [andySprite setPosition:newPosition];
-    } else if (andyDirection == kDirectionRight) {
-        CGPoint newPosition = ccp(andySprite.position.x+5, andySprite.position.y);
-        [andySprite setPosition:newPosition];
-    } else if (andyDirection == kDirectionDown) {
-        CGPoint newPosition = ccp(andySprite.position.x, andySprite.position.y-5);
-        [andySprite setPosition:newPosition];
-    }
 }
 
 #pragma mark -
 #pragma mark Update Method
 -(void) update:(ccTime)deltaTime
 {
-    [self andyMove];
+    CCArray *listOfGameObjects = [self.gameplayBatchNode children];
+    for (GameCharacter *tempChar in listOfGameObjects) {
+        [tempChar updateStateWithDeltaTime:deltaTime andListOfGameObjects:listOfGameObjects];
+    }
 }
 
 @end

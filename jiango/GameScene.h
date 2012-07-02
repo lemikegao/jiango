@@ -1,5 +1,5 @@
 //
-//  MyCocos2DClass.h
+//  GameScene.h
 //  jiango
 //
 //  Created by Michael Gao on 6/28/12.
@@ -8,11 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-#import "HelloWorldLayer.h"
-#import "GameplayLayer.h"
 
-@interface GameScene : CCScene {
-    
-}
+@interface GameScene : CCScene
 
 @end

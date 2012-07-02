@@ -1,5 +1,5 @@
 //
-//  MyCocos2DClass.m
+//  GameScene.m
 //  jiango
 //
 //  Created by Michael Gao on 6/28/12.
@@ -7,6 +7,8 @@
 //
 
 #import "GameScene.h"
+#import "BackgroundLayer.h"
+#import "GameplayLayer.h"
 
 
 @implementation GameScene
@@ -14,14 +16,15 @@
 -(id)init {
     self = [super init];
     if (self != nil) {
+        CCLOG(@"game scene init");
         // Background Layer
-        HelloWorldLayer *backgroundLayer = [HelloWorldLayer node]; // 1
-        // Gameplay Layer
-        GameplayLayer *gameplayLayer = [GameplayLayer node];       // 3
-        backgroundLayer.delegate = gameplayLayer;
+        BackgroundLayer *backgroundLayer = [BackgroundLayer node];
+        [self addChild:backgroundLayer z:0];
         
-        [self addChild:backgroundLayer z:0];                       // 2
-        [self addChild:gameplayLayer z:5];                         // 4
+        // Gameplay Layer
+        GameplayLayer *gameplayLayer = [GameplayLayer node];
+        backgroundLayer.controlsDelegate = gameplayLayer.rocketship;
+        [self addChild:gameplayLayer z:5];
     }
     return self;
 }

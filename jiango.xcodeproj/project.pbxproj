@@ -7,6 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C427ABAE159FCFBB0011893C /* jiangoAtlas.plist in Resources */ = {isa = PBXBuildFile; fileRef = C427ABAC159FCFBB0011893C /* jiangoAtlas.plist */; };
+		C427ABAF159FCFBB0011893C /* jiangoAtlas.png in Resources */ = {isa = PBXBuildFile; fileRef = C427ABAD159FCFBB0011893C /* jiangoAtlas.png */; };
+		C427ABB3159FD4B10011893C /* Rocketship.plist in Resources */ = {isa = PBXBuildFile; fileRef = C427ABB2159FD4B10011893C /* Rocketship.plist */; };
+		C427ABC0159FD86A0011893C /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C427ABBF159FD86A0011893C /* GameObject.m */; };
+		C427ABC3159FDDAD0011893C /* GameCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = C427ABC2159FDDAD0011893C /* GameCharacter.m */; };
+		C427ABC6159FDE640011893C /* Rocketship.m in Sources */ = {isa = PBXBuildFile; fileRef = C427ABC5159FDE640011893C /* Rocketship.m */; };
+		C42E2740159FC66F007138BF /* rocketship-center-jets1.png in Resources */ = {isa = PBXBuildFile; fileRef = C42E2737159FC66F007138BF /* rocketship-center-jets1.png */; };
+		C42E2741159FC66F007138BF /* rocketship-center-jets2.png in Resources */ = {isa = PBXBuildFile; fileRef = C42E2738159FC66F007138BF /* rocketship-center-jets2.png */; };
+		C42E2742159FC66F007138BF /* rocketship-center.png in Resources */ = {isa = PBXBuildFile; fileRef = C42E2739159FC66F007138BF /* rocketship-center.png */; };
+		C42E2743159FC66F007138BF /* rocketship-left-jets1.png in Resources */ = {isa = PBXBuildFile; fileRef = C42E273A159FC66F007138BF /* rocketship-left-jets1.png */; };
+		C42E2744159FC66F007138BF /* rocketship-left-jets2.png in Resources */ = {isa = PBXBuildFile; fileRef = C42E273B159FC66F007138BF /* rocketship-left-jets2.png */; };
+		C42E2745159FC66F007138BF /* rocketship-left.png in Resources */ = {isa = PBXBuildFile; fileRef = C42E273C159FC66F007138BF /* rocketship-left.png */; };
+		C42E2746159FC66F007138BF /* rocketship-right-jets1.png in Resources */ = {isa = PBXBuildFile; fileRef = C42E273D159FC66F007138BF /* rocketship-right-jets1.png */; };
+		C42E2747159FC66F007138BF /* rocketship-right-jets2.png in Resources */ = {isa = PBXBuildFile; fileRef = C42E273E159FC66F007138BF /* rocketship-right-jets2.png */; };
+		C42E2748159FC66F007138BF /* rocketship-right.png in Resources */ = {isa = PBXBuildFile; fileRef = C42E273F159FC66F007138BF /* rocketship-right.png */; };
+		C4350D48159FBBFA00EFCE9C /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = C4350D47159FBBFA00EFCE9C /* background.png */; };
+		C47A6068159F815400FE78D9 /* bg_front_spacedust.png in Resources */ = {isa = PBXBuildFile; fileRef = C47A6063159F815400FE78D9 /* bg_front_spacedust.png */; };
+		C47A6069159F815400FE78D9 /* bg_galaxy.png in Resources */ = {isa = PBXBuildFile; fileRef = C47A6064159F815400FE78D9 /* bg_galaxy.png */; };
+		C47A606A159F815400FE78D9 /* bg_planetsunrise.png in Resources */ = {isa = PBXBuildFile; fileRef = C47A6065159F815400FE78D9 /* bg_planetsunrise.png */; };
+		C47A606B159F815400FE78D9 /* bg_spacialanomaly.png in Resources */ = {isa = PBXBuildFile; fileRef = C47A6066159F815400FE78D9 /* bg_spacialanomaly.png */; };
+		C47A606C159F815400FE78D9 /* bg_spacialanomaly2.png in Resources */ = {isa = PBXBuildFile; fileRef = C47A6067159F815400FE78D9 /* bg_spacialanomaly2.png */; };
+		C47A6071159F817100FE78D9 /* Stars1.plist in Resources */ = {isa = PBXBuildFile; fileRef = C47A606E159F817100FE78D9 /* Stars1.plist */; };
+		C47A6072159F817100FE78D9 /* Stars2.plist in Resources */ = {isa = PBXBuildFile; fileRef = C47A606F159F817100FE78D9 /* Stars2.plist */; };
+		C47A6073159F817100FE78D9 /* Stars3.plist in Resources */ = {isa = PBXBuildFile; fileRef = C47A6070159F817100FE78D9 /* Stars3.plist */; };
+		C47A60AB159F963200FE78D9 /* white_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = C47A60AA159F963200FE78D9 /* white_bar.png */; };
 		C4D1CF8F159D554000FB22A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D1CF8E159D554000FB22A3 /* QuartzCore.framework */; };
 		C4D1CF91159D554000FB22A3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D1CF90159D554000FB22A3 /* OpenGLES.framework */; };
 		C4D1CF93159D554000FB22A3 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D1CF92159D554000FB22A3 /* OpenAL.framework */; };
@@ -130,7 +155,7 @@
 		C4D1D110159D554200FB22A3 /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = C4D1D10F159D554200FB22A3 /* vec4.c */; };
 		C4D1D115159D554200FB22A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D1D114159D554200FB22A3 /* main.m */; };
 		C4D1D118159D554200FB22A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D1D117159D554200FB22A3 /* AppDelegate.m */; };
-		C4D1D11B159D554200FB22A3 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D1D11A159D554200FB22A3 /* HelloWorldLayer.m */; };
+		C4D1D11B159D554200FB22A3 /* BackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D1D11A159D554200FB22A3 /* BackgroundLayer.m */; };
 		C4D1D122159D55FF00FB22A3 /* andy horse zoom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4D1D121159D55FF00FB22A3 /* andy horse zoom.jpg */; };
 		C4D1D12C159D566000FB22A3 /* iCadeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D1D12A159D566000FB22A3 /* iCadeReaderView.m */; };
 		C4D1D12F159D573000FB22A3 /* GameplayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D1D12E159D573000FB22A3 /* GameplayLayer.m */; };
@@ -138,6 +163,36 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C427ABAC159FCFBB0011893C /* jiangoAtlas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = jiangoAtlas.plist; path = jiango/jiangoAtlas.plist; sourceTree = "<group>"; };
+		C427ABAD159FCFBB0011893C /* jiangoAtlas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jiangoAtlas.png; path = jiango/jiangoAtlas.png; sourceTree = "<group>"; };
+		C427ABB2159FD4B10011893C /* Rocketship.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Rocketship.plist; sourceTree = "<group>"; };
+		C427ABBC159FD7400011893C /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = jiango/Constants.h; sourceTree = "<group>"; };
+		C427ABBD159FD7CD0011893C /* CommonProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonProtocols.h; sourceTree = "<group>"; };
+		C427ABBE159FD86A0011893C /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObject.h; path = jiango/GameObject.h; sourceTree = "<group>"; };
+		C427ABBF159FD86A0011893C /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameObject.m; path = jiango/GameObject.m; sourceTree = "<group>"; };
+		C427ABC1159FDDAD0011893C /* GameCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameCharacter.h; path = jiango/GameCharacter.h; sourceTree = "<group>"; };
+		C427ABC2159FDDAD0011893C /* GameCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameCharacter.m; path = jiango/GameCharacter.m; sourceTree = "<group>"; };
+		C427ABC4159FDE640011893C /* Rocketship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rocketship.h; sourceTree = "<group>"; };
+		C427ABC5159FDE640011893C /* Rocketship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rocketship.m; sourceTree = "<group>"; };
+		C42E2737159FC66F007138BF /* rocketship-center-jets1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocketship-center-jets1.png"; sourceTree = "<group>"; };
+		C42E2738159FC66F007138BF /* rocketship-center-jets2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocketship-center-jets2.png"; sourceTree = "<group>"; };
+		C42E2739159FC66F007138BF /* rocketship-center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocketship-center.png"; sourceTree = "<group>"; };
+		C42E273A159FC66F007138BF /* rocketship-left-jets1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocketship-left-jets1.png"; sourceTree = "<group>"; };
+		C42E273B159FC66F007138BF /* rocketship-left-jets2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocketship-left-jets2.png"; sourceTree = "<group>"; };
+		C42E273C159FC66F007138BF /* rocketship-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocketship-left.png"; sourceTree = "<group>"; };
+		C42E273D159FC66F007138BF /* rocketship-right-jets1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocketship-right-jets1.png"; sourceTree = "<group>"; };
+		C42E273E159FC66F007138BF /* rocketship-right-jets2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocketship-right-jets2.png"; sourceTree = "<group>"; };
+		C42E273F159FC66F007138BF /* rocketship-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rocketship-right.png"; sourceTree = "<group>"; };
+		C4350D47159FBBFA00EFCE9C /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = jiango/background.png; sourceTree = "<group>"; };
+		C47A6063159F815400FE78D9 /* bg_front_spacedust.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_front_spacedust.png; sourceTree = "<group>"; };
+		C47A6064159F815400FE78D9 /* bg_galaxy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_galaxy.png; sourceTree = "<group>"; };
+		C47A6065159F815400FE78D9 /* bg_planetsunrise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_planetsunrise.png; sourceTree = "<group>"; };
+		C47A6066159F815400FE78D9 /* bg_spacialanomaly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_spacialanomaly.png; sourceTree = "<group>"; };
+		C47A6067159F815400FE78D9 /* bg_spacialanomaly2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_spacialanomaly2.png; sourceTree = "<group>"; };
+		C47A606E159F817100FE78D9 /* Stars1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stars1.plist; sourceTree = "<group>"; };
+		C47A606F159F817100FE78D9 /* Stars2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stars2.plist; sourceTree = "<group>"; };
+		C47A6070159F817100FE78D9 /* Stars3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stars3.plist; sourceTree = "<group>"; };
+		C47A60AA159F963200FE78D9 /* white_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white_bar.png; path = Backgrounds/Particles/white_bar.png; sourceTree = "<group>"; };
 		C4D1CF8A159D554000FB22A3 /* jiango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jiango.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D1CF8E159D554000FB22A3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C4D1CF90159D554000FB22A3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -393,18 +448,18 @@
 		C4D1D111159D554200FB22A3 /* LICENSE_Kazmath.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE_Kazmath.txt; path = libs/LICENSE_Kazmath.txt; sourceTree = "<group>"; };
 		C4D1D113159D554200FB22A3 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		C4D1D114159D554200FB22A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C4D1D116159D554200FB22A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C4D1D117159D554200FB22A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C4D1D119159D554200FB22A3 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		C4D1D11A159D554200FB22A3 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
+		C4D1D116159D554200FB22A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = jiango/AppDelegate.h; sourceTree = "<group>"; };
+		C4D1D117159D554200FB22A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = jiango/AppDelegate.m; sourceTree = "<group>"; };
+		C4D1D119159D554200FB22A3 /* BackgroundLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BackgroundLayer.h; path = jiango/BackgroundLayer.h; sourceTree = "<group>"; };
+		C4D1D11A159D554200FB22A3 /* BackgroundLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BackgroundLayer.m; path = jiango/BackgroundLayer.m; sourceTree = "<group>"; };
 		C4D1D121159D55FF00FB22A3 /* andy horse zoom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "andy horse zoom.jpg"; sourceTree = "<group>"; };
 		C4D1D129159D566000FB22A3 /* iCadeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeReaderView.h; sourceTree = "<group>"; };
 		C4D1D12A159D566000FB22A3 /* iCadeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCadeReaderView.m; sourceTree = "<group>"; };
 		C4D1D12B159D566000FB22A3 /* iCadeState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeState.h; sourceTree = "<group>"; };
-		C4D1D12D159D573000FB22A3 /* GameplayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameplayLayer.h; sourceTree = "<group>"; };
-		C4D1D12E159D573000FB22A3 /* GameplayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameplayLayer.m; sourceTree = "<group>"; };
-		C4D1D130159D575500FB22A3 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		C4D1D131159D575500FB22A3 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		C4D1D12D159D573000FB22A3 /* GameplayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameplayLayer.h; path = jiango/GameplayLayer.h; sourceTree = "<group>"; };
+		C4D1D12E159D573000FB22A3 /* GameplayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameplayLayer.m; path = jiango/GameplayLayer.m; sourceTree = "<group>"; };
+		C4D1D130159D575500FB22A3 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = jiango/GameScene.h; sourceTree = "<group>"; };
+		C4D1D131159D575500FB22A3 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameScene.m; path = jiango/GameScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,10 +482,144 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C427ABB1159FD4750011893C /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				C427ABB2159FD4B10011893C /* Rocketship.plist */,
+			);
+			name = Plists;
+			sourceTree = "<group>";
+		};
+		C427ABB4159FD6250011893C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C427ABBC159FD7400011893C /* Constants.h */,
+				C427ABBD159FD7CD0011893C /* CommonProtocols.h */,
+			);
+			name = Constants;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C427ABB5159FD62C0011893C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C4D1D130159D575500FB22A3 /* GameScene.h */,
+				C4D1D131159D575500FB22A3 /* GameScene.m */,
+			);
+			name = Scenes;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C427ABB6159FD6380011893C /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				C4D1D119159D554200FB22A3 /* BackgroundLayer.h */,
+				C4D1D11A159D554200FB22A3 /* BackgroundLayer.m */,
+				C4D1D12D159D573000FB22A3 /* GameplayLayer.h */,
+				C4D1D12E159D573000FB22A3 /* GameplayLayer.m */,
+			);
+			name = Layers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C427ABB7159FD64C0011893C /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				C427ABBE159FD86A0011893C /* GameObject.h */,
+				C427ABBF159FD86A0011893C /* GameObject.m */,
+				C427ABC1159FDDAD0011893C /* GameCharacter.h */,
+				C427ABC2159FDDAD0011893C /* GameCharacter.m */,
+				C427ABC4159FDE640011893C /* Rocketship.h */,
+				C427ABC5159FDE640011893C /* Rocketship.m */,
+			);
+			name = GameObjects;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C427ABB8159FD6550011893C /* EnemyObjects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = EnemyObjects;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C427ABB9159FD65E0011893C /* PowerUps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PowerUps;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C427ABBA159FD6690011893C /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				C4D1D116159D554200FB22A3 /* AppDelegate.h */,
+				C4D1D117159D554200FB22A3 /* AppDelegate.m */,
+			);
+			name = Singletons;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C427ABBB159FD6FF0011893C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C427ABAC159FCFBB0011893C /* jiangoAtlas.plist */,
+				C427ABAD159FCFBB0011893C /* jiangoAtlas.png */,
+				C4350D47159FBBFA00EFCE9C /* background.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		C42E2736159FC66F007138BF /* rocketship */ = {
+			isa = PBXGroup;
+			children = (
+				C42E2737159FC66F007138BF /* rocketship-center-jets1.png */,
+				C42E2738159FC66F007138BF /* rocketship-center-jets2.png */,
+				C42E2739159FC66F007138BF /* rocketship-center.png */,
+				C42E273A159FC66F007138BF /* rocketship-left-jets1.png */,
+				C42E273B159FC66F007138BF /* rocketship-left-jets2.png */,
+				C42E273C159FC66F007138BF /* rocketship-left.png */,
+				C42E273D159FC66F007138BF /* rocketship-right-jets1.png */,
+				C42E273E159FC66F007138BF /* rocketship-right-jets2.png */,
+				C42E273F159FC66F007138BF /* rocketship-right.png */,
+			);
+			path = rocketship;
+			sourceTree = "<group>";
+		};
+		C47A6062159F815400FE78D9 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				C47A6063159F815400FE78D9 /* bg_front_spacedust.png */,
+				C47A6064159F815400FE78D9 /* bg_galaxy.png */,
+				C47A6065159F815400FE78D9 /* bg_planetsunrise.png */,
+				C47A6066159F815400FE78D9 /* bg_spacialanomaly.png */,
+				C47A6067159F815400FE78D9 /* bg_spacialanomaly2.png */,
+			);
+			path = Backgrounds;
+			sourceTree = "<group>";
+		};
+		C47A606D159F817100FE78D9 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				C47A606E159F817100FE78D9 /* Stars1.plist */,
+				C47A606F159F817100FE78D9 /* Stars2.plist */,
+				C47A6070159F817100FE78D9 /* Stars3.plist */,
+			);
+			name = Particles;
+			path = Backgrounds/Particles;
+			sourceTree = "<group>";
+		};
 		C4D1CF7F159D554000FB22A3 = {
 			isa = PBXGroup;
 			children = (
-				C4D1CFA0159D554000FB22A3 /* jiango */,
+				C4D1CFA0159D554000FB22A3 /* Classes */,
+				C427ABB1159FD4750011893C /* Plists */,
+				C427ABBB159FD6FF0011893C /* Images */,
+				C4D1CFA1159D554000FB22A3 /* Resources */,
+				C4D1CFB9159D554000FB22A3 /* libs */,
+				C4D1D112159D554200FB22A3 /* Supporting Files */,
 				C4D1CF8D159D554000FB22A3 /* Frameworks */,
 				C4D1CF8B159D554000FB22A3 /* Products */,
 			);
@@ -461,27 +650,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C4D1CFA0159D554000FB22A3 /* jiango */ = {
+		C4D1CFA0159D554000FB22A3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C4D1D116159D554200FB22A3 /* AppDelegate.h */,
-				C4D1D117159D554200FB22A3 /* AppDelegate.m */,
-				C4D1D119159D554200FB22A3 /* HelloWorldLayer.h */,
-				C4D1D11A159D554200FB22A3 /* HelloWorldLayer.m */,
-				C4D1D12D159D573000FB22A3 /* GameplayLayer.h */,
-				C4D1D12E159D573000FB22A3 /* GameplayLayer.m */,
-				C4D1D130159D575500FB22A3 /* GameScene.h */,
-				C4D1D131159D575500FB22A3 /* GameScene.m */,
-				C4D1CFA1159D554000FB22A3 /* Resources */,
-				C4D1CFB9159D554000FB22A3 /* libs */,
-				C4D1D112159D554200FB22A3 /* Supporting Files */,
+				C427ABB4159FD6250011893C /* Constants */,
+				C427ABB5159FD62C0011893C /* Scenes */,
+				C427ABB6159FD6380011893C /* Layers */,
+				C427ABB7159FD64C0011893C /* GameObjects */,
+				C427ABB8159FD6550011893C /* EnemyObjects */,
+				C427ABB9159FD65E0011893C /* PowerUps */,
+				C427ABBA159FD6690011893C /* Singletons */,
 			);
+			name = Classes;
 			path = jiango;
 			sourceTree = "<group>";
 		};
 		C4D1CFA1159D554000FB22A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C42E2736159FC66F007138BF /* rocketship */,
+				C47A60AA159F963200FE78D9 /* white_bar.png */,
+				C47A6062159F815400FE78D9 /* Backgrounds */,
+				C47A606D159F817100FE78D9 /* Particles */,
 				C4D1D121159D55FF00FB22A3 /* andy horse zoom.jpg */,
 				C4D1CFA2159D554000FB22A3 /* Default.png */,
 				C4D1CFA4159D554000FB22A3 /* fps_images.png */,
@@ -497,6 +687,7 @@
 				C4D1CFB7159D554000FB22A3 /* iTunesArtwork */,
 			);
 			name = Resources;
+			path = jiango;
 			sourceTree = "<group>";
 		};
 		C4D1CFB9159D554000FB22A3 /* libs */ = {
@@ -510,6 +701,7 @@
 				C4D1D0E0159D554200FB22A3 /* kazmath */,
 			);
 			name = libs;
+			path = jiango;
 			sourceTree = "<group>";
 		};
 		C4D1CFBA159D554000FB22A3 /* cocos2d */ = {
@@ -840,6 +1032,7 @@
 				C4D1D114159D554200FB22A3 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = jiango;
 			sourceTree = "<group>";
 		};
 		C4D1D128159D566000FB22A3 /* iCade */ = {
@@ -916,6 +1109,28 @@
 				C4D1CFB8159D554000FB22A3 /* iTunesArtwork in Resources */,
 				C4D1D0F6159D554200FB22A3 /* ChangeLog in Resources */,
 				C4D1D122159D55FF00FB22A3 /* andy horse zoom.jpg in Resources */,
+				C47A6068159F815400FE78D9 /* bg_front_spacedust.png in Resources */,
+				C47A6069159F815400FE78D9 /* bg_galaxy.png in Resources */,
+				C47A606A159F815400FE78D9 /* bg_planetsunrise.png in Resources */,
+				C47A606B159F815400FE78D9 /* bg_spacialanomaly.png in Resources */,
+				C47A606C159F815400FE78D9 /* bg_spacialanomaly2.png in Resources */,
+				C47A6071159F817100FE78D9 /* Stars1.plist in Resources */,
+				C47A6072159F817100FE78D9 /* Stars2.plist in Resources */,
+				C47A6073159F817100FE78D9 /* Stars3.plist in Resources */,
+				C47A60AB159F963200FE78D9 /* white_bar.png in Resources */,
+				C4350D48159FBBFA00EFCE9C /* background.png in Resources */,
+				C42E2740159FC66F007138BF /* rocketship-center-jets1.png in Resources */,
+				C42E2741159FC66F007138BF /* rocketship-center-jets2.png in Resources */,
+				C42E2742159FC66F007138BF /* rocketship-center.png in Resources */,
+				C42E2743159FC66F007138BF /* rocketship-left-jets1.png in Resources */,
+				C42E2744159FC66F007138BF /* rocketship-left-jets2.png in Resources */,
+				C42E2745159FC66F007138BF /* rocketship-left.png in Resources */,
+				C42E2746159FC66F007138BF /* rocketship-right-jets1.png in Resources */,
+				C42E2747159FC66F007138BF /* rocketship-right-jets2.png in Resources */,
+				C42E2748159FC66F007138BF /* rocketship-right.png in Resources */,
+				C427ABAE159FCFBB0011893C /* jiangoAtlas.plist in Resources */,
+				C427ABAF159FCFBB0011893C /* jiangoAtlas.png in Resources */,
+				C427ABB3159FD4B10011893C /* Rocketship.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1028,10 +1243,13 @@
 				C4D1D110159D554200FB22A3 /* vec4.c in Sources */,
 				C4D1D115159D554200FB22A3 /* main.m in Sources */,
 				C4D1D118159D554200FB22A3 /* AppDelegate.m in Sources */,
-				C4D1D11B159D554200FB22A3 /* HelloWorldLayer.m in Sources */,
+				C4D1D11B159D554200FB22A3 /* BackgroundLayer.m in Sources */,
 				C4D1D12C159D566000FB22A3 /* iCadeReaderView.m in Sources */,
 				C4D1D12F159D573000FB22A3 /* GameplayLayer.m in Sources */,
 				C4D1D132159D575600FB22A3 /* GameScene.m in Sources */,
+				C427ABC0159FD86A0011893C /* GameObject.m in Sources */,
+				C427ABC3159FDDAD0011893C /* GameCharacter.m in Sources */,
+				C427ABC6159FDE640011893C /* Rocketship.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1135,6 +1353,7 @@
 				C4D1D120159D554200FB22A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -101,6 +101,17 @@
 	[super addChild: child z:z tag:child.tag];
 }
 
+-(void) incrementOffset:(CGPoint)offset forChild:(CCNode*)node 
+{
+	for( unsigned int i=0;i < parallaxArray_->num;i++) {
+		CGPointObject *point = parallaxArray_->arr[i];
+		if( [[point child] isEqual:node] ) {
+			[point setOffset:ccpAdd([point offset], offset)];
+			break;
+		}
+	}
+}
+
 -(void) removeChild:(CCNode*)node cleanup:(BOOL)cleanup
 {
 	for( unsigned int i=0;i < parallaxArray_->num;i++) {

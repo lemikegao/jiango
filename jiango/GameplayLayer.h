@@ -6,13 +6,15 @@
 //  Copyright 2012 Calimucho. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "cocos2d.h"
-#import "HelloWorldLayer.h"
+#import "Constants.h"
+#import "CommonProtocols.h"
+#import "Rocketship.h"
 
-@interface GameplayLayer : CCLayer <ControlsDelegate>  {
-    CCSprite *andySprite;
-    ControlDirection andyDirection;
-}
+
+@interface GameplayLayer : CCLayer
+
+@property (nonatomic, strong) Rocketship *rocketship;
+@property (nonatomic, strong) CCSpriteBatchNode *gameplayBatchNode;
 
 @end

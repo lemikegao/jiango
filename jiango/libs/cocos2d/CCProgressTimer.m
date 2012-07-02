@@ -398,7 +398,8 @@ const char kCCProgressTextureCoords = 0x4b;
 		return;
 	}
 	float alpha = percentage_ / 100.f;
-	CGPoint alphaOffset = ccpMult(ccp(1.f * (1.f - barChangeRate_.x) + alpha * barChangeRate_.x, 1.f * (1.f - barChangeRate_.y) + alpha * barChangeRate_.y), .5f);
+//	CGPoint alphaOffset = ccpMult(ccp(1.f * (1.f - barChangeRate_.x) + alpha * barChangeRate_.x, 1.f * (1.f - barChangeRate_.y) + alpha * barChangeRate_.y), .5f);
+    CGPoint alphaOffset = ccpMult(ccp(1.f * (1.f - barChangeRate_.x) + alpha * barChangeRate_.x, 1.f * (1)), .5f);
 	CGPoint min = ccpSub(midpoint_, alphaOffset);
 	CGPoint max = ccpAdd(midpoint_, alphaOffset);
   
